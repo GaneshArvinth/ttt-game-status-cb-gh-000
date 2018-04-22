@@ -99,6 +99,6 @@ def winner(board)
     end
 
   else
-    return false
+    return nil
   end
 end
