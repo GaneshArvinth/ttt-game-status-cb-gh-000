@@ -92,9 +92,9 @@ def winner(board)
 
   if (func1!=false)
 
-    if(func1[0]=="X" && func1[1]=="X" && func1[2]=="X")
+    if(board[func1[0]]=="X" && board[func1[1]]=="X" && board[func1[2]]=="X")
       return "X"
-    elsif(func1[0]=="O" && func1[1]=="O" && func1[2]=="O")
+    elsif(board[func1[0]]=="O" && board[func1[1]]=="O" && board[func1[2]]=="O")
       return "O"
     end
 
@@ -102,5 +102,3 @@ def winner(board)
     return false
   end
 end
-      
-              
