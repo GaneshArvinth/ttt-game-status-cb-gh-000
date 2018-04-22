@@ -45,13 +45,13 @@ def full?(board)
 
   index = 0
   count = 0
-  
+
   while (index<9)
-    
+
     if (board[index] == " ")
       count+=1
     end
-    
+
     index+=1
   end
 
@@ -62,4 +62,12 @@ def full?(board)
   end
 
 end
-  
+
+def draw?(board)
+  func1 = won?(board)
+  func2 = full?(board)
+
+  if (func1 == false && func2 == false)
+    return true
+  end
+end
