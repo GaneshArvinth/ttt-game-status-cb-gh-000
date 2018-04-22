@@ -67,7 +67,7 @@ def draw?(board)
   func1 = won?(board)
   func2 = full?(board)
 
-  if (func1 == false && func2 == false)
+  if (func1 == false && func2 == true)
     return true
   end
 end
