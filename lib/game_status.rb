@@ -71,3 +71,18 @@ def draw?(board)
     return true
   end
 end
+
+def over?(board)
+  func1 = draw?(board)
+  func2 = won?(board)
+  func3 = full?(board)
+
+  if (func1 == true)
+    return true
+  elsif(func2 != false)
+    return true
+  elsif(func3 == false)
+    return false
+  end
+
+end
