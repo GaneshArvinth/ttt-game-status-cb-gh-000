@@ -86,3 +86,21 @@ def over?(board)
   end
 
 end
+
+def winner(board)
+  func1 = won?(board)
+
+  if (func1!=false)
+
+    if(func1[0]=="X" && func1[1]=="X" && func1[2]=="X")
+      return "X"
+    elsif(func1[0]=="O" && func1[1]=="O" && func1[2]=="O")
+      return "O"
+    end
+
+  else
+    return false
+  end
+end
+      
+              
